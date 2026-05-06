@@ -1,43 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aniket Mishra: Project Portfolio</title>
+    <title>Aniket Mishra – Project Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; }
-        h1 { text-align: center; }
-        .project { margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #ddd; }
-        a { color: #0366d6; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+        }
+
+        .project h2 {
+            margin-top: 0;
+            color: #1a73e8;
+        }
+
+        .project p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #1a73e8;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .links {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
 
 <h1>My Projects</h1>
-<p>Welcome to my project portfolio. Below are my live applications hosted on Render, along with their GitHub repositories.</p>
 
-<div class="project">
-    <h2>Reactor Stabilization: A Behavioral Biometric CAPTCHA System</h2>
-    <p>Multi-layered trap defense using chaos traps, latency traps, and behavioral telemetry. Stress-tested against Vision-LLMs, PID controllers, and RL agents. Deployed on a Raspberry Pi cluster with horizontal scaling. Built with inclusive, color-blind friendly design.</p>
-    <p><a href="https://stabilizer-inversependulum.onrender.com/" target="_blank">Live App</a> | 
-       <a href="https://github.com/AniketMishra27/Stabilizer_InversePendulum" target="_blank">GitHub Repo</a></p>
-</div>
+<div class="container">
 
-<div class="project">
-    <h2>LogicGPT Suite: Arithmetic & Boolean Reasoning with PyTorch</h2>
-    <p>Two specialized neural engines built from scratch using a custom Transformer architecture. MathGPT solves multi-digit arithmetic; BooleanGPT interprets logical expressions using learned truth-table relationships.</p>
-    <p><a href="https://aniket-27-mathgpt-booleangpt.hf.space/?logs=container&__theme=system&deep_link=dyON3FMHN9U" target="_blank">Live App</a></p>
-</div>
+    <div class="project">
+        <h2>Reactor Stabilization: A Behavioral Biometric CAPTCHA System</h2>
+        <p>Multi-layered trap defense using chaos traps, latency traps, and behavioral telemetry. Stress-tested against Vision-LLMs, PID controllers, and RL agents. Deployed on a Raspberry Pi cluster with horizontal scaling.</p>
+        <div class="links">
+            <a href="https://stabilizer-inversependulum.onrender.com/" target="_blank">Live App</a> |
+            <a href="https://github.com/AniketMishra27/Stabilizer_InversePendulum" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
 
-<div class="project">
-    <h2>Netflix Content Strategy & Recommendation Dashboard</h2>
-    <p>Interactive Tableau dashboard analyzing 55,500+ Netflix titles. Built with Python preprocessing (Pandas/NumPy) and median-based imputation.</p>
-    <p><a href="https://public.tableau.com/app/profile/aniket.mishra6333/viz/Data_viz_updated_better/Netflix" target="_blank">Live App</a></p>
-</div>
+    <div class="project">
+        <h2>LogicGPT Suite: Arithmetic & Boolean Reasoning</h2>
+        <p>Two neural engines built from scratch using a custom Transformer architecture. MathGPT solves multi-digit arithmetic; BooleanGPT interprets logical expressions using learned truth-table relationships.</p>
+        <div class="links">
+            <a href="https://aniket-27-mathgpt-booleangpt.hf.space/?logs=container&__theme=system&deep_link=dyON3FMHN9U" target="_blank">Live App</a>
+        </div>
+    </div>
 
-<div class="project">
-    <h2>AI-Resistant CAPTCHA System</h2>
-    <p>Dual-layer CAPTCHA using drag-and-drop mechanics and optical illusions. Stress-tested using a custom attacker bot powered by Gemini. Built with Flask and deployed on Render.</p>
-    <p><a href="https://captcha-system.onrender.com/" target="_blank">Live App</a> | 
-       <a href="https://github.com/AniketMishra27/Captcha-system" target="_blank">GitHub Repo</a></p> 
+    <div class="project">
+        <h2>Netflix Content Strategy & Recommendation Dashboard</h2>
+        <p>Interactive Tableau dashboard analyzing 55,500+ Netflix titles. Built with Python preprocessing (Pandas/NumPy) and median-based imputation.</p>
+        <div class="links">
+            <a href="https://public.tableau.com/app/profile/aniket.mishra6333/viz/Data_viz_updated_better/Netflix" target="_blank">Live App</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>AI-Resistant CAPTCHA System</h2>
+        <p>Dual-layer CAPTCHA using drag-and-drop mechanics and optical illusions. Stress-tested using a custom attacker bot powered by Gemini. Built with Flask and deployed on Render.</p>
+        <div class="links">
+            <a href="https://captcha-system.onrender.com/" target="_blank">Live App</a> |
+            <a href="https://github.com/AniketMishra27/Captcha-system" target="_blank">GitHub Repo</a>
+        </div>
+    </div>
+
 </div>
 
 </body>
